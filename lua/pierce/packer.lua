@@ -17,13 +17,13 @@ return require('packer').startup(function(use)
       lazy = false,
       priority = 1000,
       opts = {}, })
- use ({
-     'rose-pine/neovim',
-     as = 'rose-pine',
-     config = function()
-   	  vim.cmd('colorscheme rose-pine')
-     end
- })
+-- use ({
+--     'rose-pine/neovim',
+--     as = 'rose-pine',
+--     config = function()
+--   	  vim.cmd('colorscheme rose-pine')
+--     end
+-- })
 use {'navarasu/onedark.nvim'}
 use { "catppuccin/nvim", as = "catppuccin" }
  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
